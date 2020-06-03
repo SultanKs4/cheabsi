@@ -47,7 +47,7 @@ class absen(object):
             password_input).send_keys(self.password)
         self.driver.find_element_by_xpath(login_submit).click()
 
-        home_presensi = '//*[@id="gm_mahasiswa"]/ul/li[3]/a'
+        home_presensi = '//*[@id="gm_akademik"]/ul/li[2]/a'
 
         self.wait(xpath=home_presensi, message="home page")
         print("Login Completed")
